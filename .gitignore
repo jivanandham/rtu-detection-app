@@ -29,3 +29,10 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Backend weights
+backend/weights/
+
+# Build files
+frontend/build/
+frontend/node_modules/
