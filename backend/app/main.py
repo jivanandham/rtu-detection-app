@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.models import ImageUpload, ImageUploadResponse, ImageResponse, ApprovalResponse
 from app.database import engine, Base, SessionLocal
 from app.rtu_detector import RTUDetector
+from app.building_detector import BuildingDetector
 from sqlalchemy.orm import Session
 from pathlib import Path
 import shutil
@@ -11,6 +12,8 @@ from fastapi.staticfiles import StaticFiles
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import func
+from pydantic import BaseModel
+from typing import List, Optional
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -37,6 +40,9 @@ app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 
 # Initialize RTU detector
 rtu_detector = RTUDetector()
+
+# Initialize Building detector
+building_detector = BuildingDetector()
 
 def get_db():
     db = SessionLocal()
@@ -271,3 +277,162 @@ async def get_analytics(db: Session = Depends(get_db)):
         "failedDetections": failed_detections,
         "totalBuildings": total_buildings
     }
+
+# Building Detection models
+class BuildingDetectionRequest(BaseModel):
+    zipcode: Optional[str] = None
+    county: Optional[str] = None
+    state: Optional[str] = None
+    max_buildings: Optional[int] = 20
+
+class BuildingResult(BaseModel):
+    building_id: str
+    lat: float
+    lng: float
+    address: str
+    rooftop_area_sqft: float
+    rtu_count: int
+    meets_criteria: bool
+    original_image: str
+    processed_image: Optional[str] = None
+
+class BuildingDetectionResponse(BaseModel):
+    success: bool
+    error: Optional[str] = None
+    zipcode: Optional[str] = None
+    county: Optional[str] = None
+    state: Optional[str] = None
+    total_buildings_processed: Optional[int] = None
+    buildings_with_rtus: Optional[int] = None
+    buildings_meeting_criteria: Optional[int] = None
+    results: Optional[List[BuildingResult]] = None
+    csv_path: Optional[str] = None
+
+@app.post("/detect-buildings-by-zip", response_model=BuildingDetectionResponse)
+async def detect_buildings_by_zip(request: BuildingDetectionRequest, db: Session = Depends(get_db)):
+    try:
+        if not request.zipcode:
+            raise HTTPException(status_code=400, detail="ZIP code is required")
+            
+        result = building_detector.process_zipcode(
+            request.zipcode, 
+            rtu_detector=rtu_detector,
+            max_buildings=request.max_buildings,
+            db=db
+        )
+        
+        if not result["success"]:
+            raise HTTPException(status_code=500, detail=result.get("error", "Failed to process ZIP code"))
+            
+        return result
+    except Exception as e:
+        logger.error(f"Building detection failed: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Building detection failed: {str(e)}")
+
+@app.post("/detect-buildings-by-county", response_model=BuildingDetectionResponse)
+async def detect_buildings_by_county(request: BuildingDetectionRequest, db: Session = Depends(get_db)):
+    try:
+        if not request.county or not request.state:
+            raise HTTPException(status_code=400, detail="County and state are required")
+            
+        result = building_detector.process_county(
+            request.county,
+            request.state,
+            rtu_detector=rtu_detector,
+            max_buildings=request.max_buildings,
+            db=db
+        )
+        
+        if not result["success"]:
+            raise HTTPException(status_code=500, detail=result.get("error", "Failed to process county"))
+            
+        return result
+    except Exception as e:
+        logger.error(f"Building detection failed: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Building detection failed: {str(e)}")
+
+@app.get("/building-detections", response_model=List[BuildingResult])
+async def get_building_detections(db: Session = Depends(get_db)):
+    """Get all building detection results from the database"""
+    try:
+        buildings = db.query(BuildingDetection).all()
+        return [BuildingResult(
+            building_id=b.building_id,
+            lat=b.lat,
+            lng=b.lng,
+            address=b.address,
+            rooftop_area_sqft=b.rooftop_area_sqft,
+            rtu_count=b.rtu_count,
+            meets_criteria=b.meets_criteria,
+            original_image=b.original_image,
+            processed_image=b.processed_image
+        ) for b in buildings]
+    except Exception as e:
+        logger.error(f"Failed to retrieve building detections: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Failed to retrieve building detections: {str(e)}")
+
+@app.get("/building-detections/{building_id}", response_model=BuildingResult)
+async def get_building_detection(building_id: int, db: Session = Depends(get_db)):
+    """Get a specific building detection result from the database"""
+    try:
+        building = db.query(BuildingDetection).filter(BuildingDetection.id == building_id).first()
+        if not building:
+            raise HTTPException(status_code=404, detail="Building not found")
+        
+        return BuildingResult(
+            building_id=building.building_id,
+            lat=building.lat,
+            lng=building.lng,
+            address=building.address,
+            rooftop_area_sqft=building.rooftop_area_sqft,
+            rtu_count=building.rtu_count,
+            meets_criteria=building.meets_criteria,
+            original_image=building.original_image,
+            processed_image=building.processed_image
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Failed to retrieve building detection: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Failed to retrieve building detection: {str(e)}")
+
+@app.get("/building-detections/search", response_model=List[BuildingResult])
+async def search_building_detections(
+    search_type: Optional[str] = None,
+    search_query: Optional[str] = None,
+    meets_criteria: Optional[bool] = None,
+    min_rtu_count: Optional[int] = None,
+    db: Session = Depends(get_db)
+):
+    """Search building detection results with filters"""
+    try:
+        query = db.query(BuildingDetection)
+        
+        if search_type:
+            query = query.filter(BuildingDetection.search_type == search_type)
+        
+        if search_query:
+            query = query.filter(BuildingDetection.search_query.ilike(f"%{search_query}%"))
+        
+        if meets_criteria is not None:
+            query = query.filter(BuildingDetection.meets_criteria == meets_criteria)
+        
+        if min_rtu_count is not None:
+            query = query.filter(BuildingDetection.rtu_count >= min_rtu_count)
+        
+        buildings = query.all()
+        
+        return [BuildingResult(
+            building_id=b.building_id,
+            lat=b.lat,
+            lng=b.lng,
+            address=b.address,
+            rooftop_area_sqft=b.rooftop_area_sqft,
+            rtu_count=b.rtu_count,
+            meets_criteria=b.meets_criteria,
+            original_image=b.original_image,
+            processed_image=b.processed_image
+        ) for b in buildings]
+    except Exception as e:
+        logger.error(f"Failed to search building detections: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Failed to search building detections: {str(e)}")

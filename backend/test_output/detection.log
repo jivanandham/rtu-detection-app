@@ -1,0 +1,340 @@
+2025-04-10 19:01:37,602 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:01:37,602 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:01:37,602 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:01:37,603 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190137
+2025-04-10 19:01:38,089 - app.building_detector - ERROR - Error in test_process_single_building: cannot write mode P as JPEG
+2025-04-10 19:02:40,142 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:02:40,142 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:02:40,142 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:02:40,143 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190240
+2025-04-10 19:02:44,196 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:02:44,197 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:02:44,197 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:02:44,198 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190244
+2025-04-10 19:02:57,569 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:02:57,570 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:02:57,570 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:02:57,571 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190257
+2025-04-10 19:02:58,043 - app.building_detector - ERROR - Error detecting rooftop: Can't convert object to 'str' for 'filename'
+2025-04-10 19:04:44,949 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:04:45,566 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:04:45,566 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:04:45,566 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:04:45,566 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190445
+2025-04-10 19:04:54,737 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:04:55,343 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:04:55,343 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:04:55,343 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:04:55,344 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190455
+2025-04-10 19:05:17,564 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:05:18,267 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:05:18,267 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:05:18,267 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:05:18,267 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190518
+2025-04-10 19:05:22,547 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:05:23,174 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:05:23,175 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:05:23,175 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:05:23,176 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190523
+2025-04-10 19:05:58,768 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:05:59,331 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:05:59,331 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:05:59,331 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:05:59,333 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190559
+2025-04-10 19:05:59,855 - app.building_detector - ERROR - Error detecting rooftop: Can't convert object to 'str' for 'filename'
+2025-04-10 19:06:20,777 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:06:21,389 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:06:21,389 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:06:21,389 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:06:21,390 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190621
+2025-04-10 19:06:25,890 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:06:26,435 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:06:26,435 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:06:26,435 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:06:26,436 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190626
+2025-04-10 19:06:29,733 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:06:30,292 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:06:30,292 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:06:30,292 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:06:30,292 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190630
+2025-04-10 19:06:30,751 - app.building_detector - ERROR - Error detecting rooftop: Can't convert object to 'str' for 'filename'
+2025-04-10 19:06:41,190 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:06:41,795 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:06:41,795 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:06:41,795 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:06:41,795 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190641
+2025-04-10 19:06:46,805 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:06:46,840 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:06:47,367 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:06:47,367 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:06:47,367 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:06:47,368 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190647
+2025-04-10 19:06:47,515 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:06:47,516 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:06:47,516 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:06:47,516 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190647
+2025-04-10 19:06:48,089 - app.building_detector - ERROR - Error detecting rooftop: Can't convert object to 'str' for 'filename'
+2025-04-10 19:07:28,262 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:07:28,830 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:07:28,830 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:07:28,830 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:07:28,830 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190728
+2025-04-10 19:07:33,317 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:07:33,916 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:07:33,916 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:07:33,917 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:07:33,918 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190733
+2025-04-10 19:07:33,919 - app.building_detector - DEBUG - Fetching satellite image with params: {'center': '37.7749,-122.4194', 'zoom': 19, 'size': '640x640', 'maptype': 'satellite', 'key': 'AIzaSyAFNzEOsH0Qfjd6KJimMjlE9KLYW5JNl94'}
+2025-04-10 19:07:34,487 - app.building_detector - INFO - Successfully fetched satellite image of size (640, 640)
+2025-04-10 19:07:34,495 - app.building_detector - ERROR - Error detecting rooftop: Can't convert object to 'str' for 'filename'
+2025-04-10 19:07:38,437 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:07:39,018 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:07:39,018 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:07:39,018 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:07:39,018 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190739
+2025-04-10 19:08:59,003 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:08:59,860 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:08:59,861 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:08:59,861 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:08:59,862 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190859
+2025-04-10 19:09:07,419 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:09:07,988 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:09:07,989 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:09:07,989 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:09:07,989 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190907
+2025-04-10 19:09:35,649 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:09:36,467 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:09:36,468 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:09:36,468 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:09:36,486 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190936
+2025-04-10 19:09:48,743 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:09:49,513 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:09:49,514 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:09:49,514 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:09:49,514 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190949
+2025-04-10 19:11:29,831 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:11:30,489 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:11:30,493 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:11:30,496 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:11:30,501 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_191130
+2025-04-10 19:11:30,501 - app.building_detector - DEBUG - Fetching satellite image with params: {'center': '40.748441,-73.985664', 'zoom': 19, 'size': '640x640', 'maptype': 'satellite', 'key': 'AIzaSyAFNzEOsH0Qfjd6KJimMjlE9KLYW5JNl94'}
+2025-04-10 19:11:30,962 - app.building_detector - INFO - Successfully fetched satellite image of size (640, 640)
+2025-04-10 19:11:30,991 - app.building_detector - ERROR - Error detecting rooftop: 'BuildingDetector' object has no attribute 'pixels_to_sqft'
+2025-04-10 19:12:09,602 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:12:10,370 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:12:10,371 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:12:16,413 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:12:16,997 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:12:16,998 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:13:36,730 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:13:37,306 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:13:37,307 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:13:43,490 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 19:13:44,064 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "Unsupported request. `GET /rooftop-detection/rooftop-detection-2` does not exist or cannot be loaded due to missing permissions.",
+        "type": "GraphMethodException",
+        "hint": "You can see your active workspace by issuing a GET request to `/` with your `api_key`."
+    }
+}
+2025-04-10 19:13:44,064 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 21:55:28,378 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 21:55:28,379 - app.building_detector - INFO - Initializing Roboflow with workspace: jeeva-9kj1f, model: jsr-hgtq0/2
+2025-04-10 21:55:28,630 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "This API key does not exist (or has been revoked).",
+        "status": 401,
+        "type": "OAuthException",
+        "hint": "You may retrieve your API key via the Roboflow Dashboard. Go to Account > Roboflow Keys to retrieve yours.",
+        "key": "YOUR_ROBOFLOW_API_KEY"
+    }
+}
+2025-04-10 21:55:28,630 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 22:26:42,748 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 22:26:42,748 - app.building_detector - INFO - Initializing Roboflow with workspace: jeeva-9kj1f, model: jsr-hgtq0/2
+2025-04-10 22:26:43,093 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "This API key does not exist (or has been revoked).",
+        "status": 401,
+        "type": "OAuthException",
+        "hint": "You may retrieve your API key via the Roboflow Dashboard. Go to Account > Roboflow Keys to retrieve yours.",
+        "key": "YOUR_ROBOFLOW_API_KEY"
+    }
+}
+2025-04-10 22:26:43,094 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 22:38:42,537 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 22:38:42,537 - app.building_detector - INFO - Initializing Roboflow with workspace: jeeva-9kj1f, model: jsr-hgtq0/2
+2025-04-10 22:38:42,832 - app.building_detector - WARNING - Could not initialize Roboflow: {
+    "error": {
+        "message": "This API key does not exist (or has been revoked).",
+        "status": 401,
+        "type": "OAuthException",
+        "hint": "You may retrieve your API key via the Roboflow Dashboard. Go to Account > Roboflow Keys to retrieve yours.",
+        "key": "YOUR_ROBOFLOW_API_KEY"
+    }
+}
+2025-04-10 22:38:42,832 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 22:42:28,631 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-10 22:42:28,631 - app.building_detector - INFO - Initializing Roboflow with workspace: jeeva-9kj1f, model: jsr-hgtq0/2
+2025-04-10 22:42:30,236 - app.building_detector - INFO - Roboflow initialized successfully for project jeeva-9kj1f/jsr-hgtq0
+2025-04-10 22:42:30,236 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-11 10:41:26,473 - app.building_detector - INFO - Loaded YOLOv11 model from /Users/jeevakrishnasamy/Desktop/rtu-detection-app/backend/weights/Yolov11.pt
+2025-04-11 10:41:26,474 - app.building_detector - INFO - Initializing Roboflow with workspace: jeeva-9kj1f, model: jsr-hgtq0/2
+2025-04-11 10:41:28,348 - app.building_detector - INFO - Roboflow initialized successfully for project jeeva-9kj1f/jsr-hgtq0
+2025-04-11 10:41:28,348 - app.building_detector - INFO - Building detector initialized successfully

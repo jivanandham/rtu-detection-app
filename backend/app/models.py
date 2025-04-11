@@ -1,10 +1,10 @@
-from sqlalchemy import Column, Integer, String, DateTime, Boolean, ForeignKey
+from sqlalchemy import Column, Integer, String, DateTime, Boolean, ForeignKey, Float, JSON
 from sqlalchemy.orm import Session
 from sqlalchemy.sql import func
 from sqlalchemy.ext.declarative import declarative_base
 from datetime import datetime
 from pydantic import BaseModel
-from typing import Optional, List
+from typing import Optional, List, Dict, Any
 
 Base = declarative_base()
 
@@ -78,3 +78,65 @@ class ApprovalResponse(BaseModel):
     id: int
     approved: bool
     message: str
+
+class BuildingDetection(Base):
+    __tablename__ = "building_detections"
+
+    id = Column(Integer, primary_key=True, index=True)
+    building_id = Column(String, index=True)
+    lat = Column(Float)
+    lng = Column(Float)
+    address = Column(String)
+    rooftop_area_sqft = Column(Float)
+    rtu_count = Column(Integer)
+    meets_criteria = Column(Boolean, default=False)
+    original_image = Column(String)
+    processed_image = Column(String, nullable=True)
+    search_type = Column(String)  # 'zipcode' or 'county'
+    search_query = Column(String)  # The zipcode or county+state that was searched
+    detection_data = Column(JSON, nullable=True)  # Store additional detection data as JSON
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "building_id": self.building_id,
+            "lat": self.lat,
+            "lng": self.lng,
+            "address": self.address,
+            "rooftop_area_sqft": self.rooftop_area_sqft,
+            "rtu_count": self.rtu_count,
+            "meets_criteria": self.meets_criteria,
+            "original_image": self.original_image,
+            "processed_image": self.processed_image,
+            "search_type": self.search_type,
+            "search_query": self.search_query,
+            "created_at": self.created_at
+        }
+
+class BuildingDetectionResponse(BaseModel):
+    id: int
+    building_id: str
+    lat: float
+    lng: float
+    address: str
+    rooftop_area_sqft: float
+    rtu_count: int
+    meets_criteria: bool
+    original_image: str
+    processed_image: Optional[str]
+    search_type: str
+    search_query: str
+    created_at: datetime
+
+class BuildingSearchResponse(BaseModel):
+    success: bool
+    error: Optional[str] = None
+    zipcode: Optional[str] = None
+    county: Optional[str] = None
+    state: Optional[str] = None
+    total_buildings_processed: Optional[int] = None
+    buildings_with_rtus: Optional[int] = None
+    buildings_meeting_criteria: Optional[int] = None
+    results: Optional[List[Dict[str, Any]]] = None
+    csv_path: Optional[str] = None

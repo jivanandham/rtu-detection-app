@@ -1,0 +1,84 @@
+2025-04-10 18:58:37,260 - app.building_detector - WARNING - Could not initialize Roboflow: API Key is of Incorrect Type 
+ Expected Type: <class 'str'>
+ Input Type: <class 'NoneType'>
+2025-04-10 18:58:37,260 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 18:58:37,260 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 18:58:37,260 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_185837
+2025-04-10 18:58:43,685 - app.building_detector - WARNING - Could not initialize Roboflow: API Key is of Incorrect Type 
+ Expected Type: <class 'str'>
+ Input Type: <class 'NoneType'>
+2025-04-10 18:58:43,685 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 18:58:43,685 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 18:58:43,686 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_185843
+2025-04-10 18:58:57,107 - app.building_detector - WARNING - Could not initialize Roboflow: API Key is of Incorrect Type 
+ Expected Type: <class 'str'>
+ Input Type: <class 'NoneType'>
+2025-04-10 18:58:57,107 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 18:58:57,107 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 18:58:57,108 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_185857
+2025-04-10 18:59:01,419 - app.building_detector - WARNING - Could not initialize Roboflow: API Key is of Incorrect Type 
+ Expected Type: <class 'str'>
+ Input Type: <class 'NoneType'>
+2025-04-10 18:59:01,419 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 18:59:01,420 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 18:59:01,420 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_185901
+2025-04-10 18:59:29,899 - app.building_detector - WARNING - Could not initialize Roboflow: API Key is of Incorrect Type 
+ Expected Type: <class 'str'>
+ Input Type: <class 'NoneType'>
+2025-04-10 18:59:29,899 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 18:59:29,899 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 18:59:29,900 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_185929
+2025-04-10 18:59:35,664 - app.building_detector - WARNING - Could not initialize Roboflow: API Key is of Incorrect Type 
+ Expected Type: <class 'str'>
+ Input Type: <class 'NoneType'>
+2025-04-10 18:59:35,665 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 18:59:35,665 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 18:59:35,665 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_185935
+2025-04-10 18:59:41,652 - app.building_detector - WARNING - Could not initialize Roboflow: API Key is of Incorrect Type 
+ Expected Type: <class 'str'>
+ Input Type: <class 'NoneType'>
+2025-04-10 18:59:41,652 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 18:59:41,652 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 18:59:41,653 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_185941
+2025-04-10 18:59:46,852 - app.building_detector - WARNING - Could not initialize Roboflow: API Key is of Incorrect Type 
+ Expected Type: <class 'str'>
+ Input Type: <class 'NoneType'>
+2025-04-10 18:59:46,852 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 18:59:46,853 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 18:59:46,853 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_185946
+2025-04-10 18:59:57,828 - app.building_detector - WARNING - Could not initialize Roboflow: API Key is of Incorrect Type 
+ Expected Type: <class 'str'>
+ Input Type: <class 'NoneType'>
+2025-04-10 18:59:57,828 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 18:59:57,828 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 18:59:57,829 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_185957
+2025-04-10 19:00:01,877 - app.building_detector - WARNING - Could not initialize Roboflow: API Key is of Incorrect Type 
+ Expected Type: <class 'str'>
+ Input Type: <class 'NoneType'>
+2025-04-10 19:00:01,877 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:00:01,877 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:00:01,879 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190001
+2025-04-10 19:00:16,979 - app.building_detector - WARNING - Could not initialize Roboflow: API Key is of Incorrect Type 
+ Expected Type: <class 'str'>
+ Input Type: <class 'NoneType'>
+2025-04-10 19:00:16,979 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:00:16,980 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:00:16,980 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190016
+2025-04-10 19:00:21,742 - app.building_detector - WARNING - Could not initialize Roboflow: API Key is of Incorrect Type 
+ Expected Type: <class 'str'>
+ Input Type: <class 'NoneType'>
+2025-04-10 19:00:21,742 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:00:21,742 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:00:21,742 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190021
+2025-04-10 19:00:44,182 - app.building_detector - WARNING - Could not initialize Roboflow: API Key is of Incorrect Type 
+ Expected Type: <class 'str'>
+ Input Type: <class 'NoneType'>
+2025-04-10 19:00:44,183 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:00:44,183 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:00:44,183 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190044
+2025-04-10 19:00:48,787 - app.building_detector - WARNING - Could not initialize Roboflow: API Key is of Incorrect Type 
+ Expected Type: <class 'str'>
+ Input Type: <class 'NoneType'>
+2025-04-10 19:00:48,788 - app.building_detector - INFO - Building detector initialized successfully
+2025-04-10 19:00:48,788 - app.building_detector - INFO - Initializing Building Detector...
+2025-04-10 19:00:48,788 - app.building_detector - INFO - Building Detector initialized. Output directory: building_detection_output/20250410_190048
